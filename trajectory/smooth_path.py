@@ -6,7 +6,7 @@ class SmoothPath:
 
     # import tensorflow_datasets as tfds
     def __init__(self, trajectory_points):
-        self.trajectory_points= trajectory_points  
+        self.trajectory_points= trajectory_points
         self.seglst = []
         self.temp = np.array([])
         self.seg_class = CircularArc()
@@ -29,9 +29,9 @@ class SmoothPath:
                 self.seglst.append(seg2)
                 # print("First iteration, adding both segments.", self.seglst)
             else:
-                self.temp = (seg1 + self.seglst.pop())/2  # Remove the first point to avoid duplication
+                self.temp = (seg1 + self.seglst.pop())/2  # takes the averate of the duplicate segments
                 self.seglst.append(self.temp)
-                self.seglst.append(seg2)  # Append only the second segment to avoid duplication
+                self.seglst.append(seg2) 
                 # print(f"Iteration {i}, merging segments. Current seglst:", self.seglst)
 
  
@@ -40,14 +40,15 @@ class SmoothPath:
         return final_segment
     
         # self.seg_class.single_plot(final_segment, color='blue', label='Smooth Trajectory')
-        
+if __name__ == "__main__":
 
-tj = [(1,2) , (2,4), (3,4), (4,5), (9,7), (10, 5)]
+    tj = [(1,2) , (2,4), (3,4), (4,5), (9,7), (10, 5)]
 
-sm_path = SmoothPath(tj)
 
-path_sm = sm_path.return_smooth_path()
+    sm_path = SmoothPath(tj)
 
-sm_path.seg_class.single_plot(path_sm)
+    path_sm = sm_path.return_smooth_path()
 
-        
+    sm_path.seg_class.single_plot(path_sm)
+
+            

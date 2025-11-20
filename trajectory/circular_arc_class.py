@@ -13,7 +13,6 @@ class CircularArc:
         """Plots the coordinates of a single trajectory segment."""
         # Note: Points used for the plot title are updated to the user's new list
         points = np.array(self.tj)
-        
 
         plt.figure(figsize=(8, 8))
         
