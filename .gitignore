@@ -1,7 +1,22 @@
 # Git-related folders to ignore
 .vscode/browse.vc.db
+*.db
+*.bak
+*.tmp
 
-# Build and Log files
+# Build and Log files (Crucial to ignore)
 build/
 install/
 log/
+
+# Python artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ROS 2 Package Artifacts (Inside src/)
+# These files are generated when you build (colcon build)
+**/CMakeCache.txt
+**/CMakeFiles/
+**/_pycache__/
+**/*.egg-info/
