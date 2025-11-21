@@ -1,0 +1,7 @@
+# Git-related folders to ignore
+.vscode/browse.vc.db
+
+# Build and Log files
+build/
+install/
+log/
