@@ -8,7 +8,8 @@ The primary goal is to take a coarse set of waypoints, generate a smooth, dense 
 System Requirements & Setup
 Environment used for development: - Operating System: Ubuntu 22.04 LTS - ROS 2 Distribution: Humble Hawksbill - Simulator: Gazebo Classic (Version 11) - Robot Platform: TurtleBot3 (Waffle)
 
-1. Installation
+    Installation
+
 Ensure you have the necessary ROS 2 packages installed.
 1.1 Install core ROS 2 packages
 
@@ -18,7 +19,10 @@ Ensure you have the necessary ROS 2 packages installed.
 
 2) sudo apt install ros-humble-turtlebot3 ros-humble-turtlebot3*
 
-2. Workspace Setup
+1.3 install matlab and numpy
+
+     Workspace Setup
+
 Follow these steps:
 
 3) cd ~/10xconstuction_ws/
@@ -29,7 +33,10 @@ Follow these steps:
 
 6) export TURTLEBOT3_MODEL=waffle
 
-3. Execution Instructions
+     Execution Instructions
+
+3.0 locate to src/tb_controller/trajectory and run test_trajectory.py to check the smoothing algorithm in action. One is custom smoothing algorithm and another is library based.
+
 The system runs using three ROS 2 nodes.
 3.1 Launch the Gazebo Simulation and RViz
 Launch Gazebo
@@ -62,6 +69,6 @@ This node subscribes to /custom_trajectory and /odom and publishes /cmd_vel.
 4. Extending to a Real Robot
 
 To deploy this on real hardware: 
-1)Subscribe to physical robot odometry. 
-2)Generate smooth path using trajectory classes. 
-3)Use current pose + goal pose to compute appropriate cmd_vel.
+1. Subscribe to physical robot odometry. 
+2. Generate smooth path using trajectory classes. 
+3. Use current pose + goal pose to compute appropriate cmd_vel.
