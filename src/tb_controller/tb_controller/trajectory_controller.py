@@ -19,7 +19,7 @@ class TargetPositionController(Node):
         self.target_x = 1.0  # meters
         self.target_y = -1.0 # meters
         
-        self.get_logger().info(f'🚀 Target set to: ({self.target_x}, {self.target_y})')
+        self.get_logger().info(f' Target set to: ({self.target_x}, {self.target_y})')
 
         # Proportional Gains (Tuning parameters for the controller)
         self.kp_linear = 0.5  # Gain for linear velocity (proportional to distance error)
