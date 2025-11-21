@@ -13,7 +13,7 @@ sm_path_custom = SmoothPath(tj)
 sm_path_cubic = CubicSplinePath(tj)
 
 
-# 1. Access the coordinate arrays from the class instance
+# 1. Access the coordinate arrays from the class instanceS
 path_custom_coords = sm_path_custom.return_smooth_path() 
 path_cubic_coords = sm_path_cubic.return_smooth_path() 
 
@@ -25,8 +25,7 @@ path_cubic_coords_ts = [(p[0], p[1], t) for p, t in zip(path_cubic_coords, ts_cu
 
 
 print("Custom Smooth Path Coordinates:" ,path_custom_coords_ts)
-print("Custom Smooth Path Coordinates:" ,path_cubic_coords_ts)
-
+print("Cubic Smooth Path Coordinates:" ,path_cubic_coords_ts)
 
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5)) 
