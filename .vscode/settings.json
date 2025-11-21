@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nobel/10xconstructions/build/tb_controller",
+        "/home/nobel/10xconstructions/install/tb_controller/lib/python3.10/site-packages",
+        "/home/nobel/drone_ws/install/drone_description/lib/python3.10/site-packages",
+        "/home/nobel/drone_ws/build/drone_control",
+        "/home/nobel/drone_ws/install/drone_control/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nobel/10xconstructions/build/tb_controller",
+        "/home/nobel/10xconstructions/install/tb_controller/lib/python3.10/site-packages",
+        "/home/nobel/drone_ws/install/drone_description/lib/python3.10/site-packages",
+        "/home/nobel/drone_ws/build/drone_control",
+        "/home/nobel/drone_ws/install/drone_control/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

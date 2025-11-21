@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from smooth_path import SmoothPath
+from smooth_path_cpy import SmoothPath
 from cubic_spline_class import CubicSplinePath
 
 #-------------------add custom paths here ----------------------
@@ -14,7 +14,6 @@ sm_path_cubic = CubicSplinePath(tj)
 # 1. Access the coordinate arrays from the class instance
 path_custom_coords = sm_path_custom.return_smooth_path() 
 path_cubic_coords = sm_path_cubic.return_smooth_path() 
-
 
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5)) 
